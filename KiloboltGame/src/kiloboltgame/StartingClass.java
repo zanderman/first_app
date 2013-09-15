@@ -55,22 +55,43 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 	public void keyPressed(KeyEvent e) {
 		switch(e.getKeyCode()){
 		case KeyEvent.VK_UP:
+			System.out.println("Move UP");
 			break;
 		case KeyEvent.VK_DOWN:
+			System.out.println("Move DOWN");
 			break;
 		case KeyEvent.VK_LEFT:
+			System.out.println("Move LEFT");
 			break;
 		case KeyEvent.VK_RIGHT:
+			System.out.println("Move RIGHT");
 			break;
 		case KeyEvent.VK_SPACE:
+			System.out.println("JUMP");
 			break;
 		}
 
 	}
 
 	@Override
-	public void keyReleased(KeyEvent arg0) {
-		// TODO Auto-generated method stub
+	public void keyReleased(KeyEvent e) {
+		switch(e.getKeyCode()){
+		case KeyEvent.VK_UP:
+			System.out.println("Stop moving UP");
+			break;
+		case KeyEvent.VK_DOWN:
+			System.out.println("Stop moving DOWN");
+			break;
+		case KeyEvent.VK_LEFT:
+			System.out.println("Stop moving LEFT");
+			break;
+		case KeyEvent.VK_RIGHT:
+			System.out.println("Stop moving RIGHT");
+			break;
+		case KeyEvent.VK_SPACE:
+			System.out.println("Stop JUMPING");
+			break;
+		}
 
 	}
 
